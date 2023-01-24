@@ -8,7 +8,7 @@ root.geometry("410x500")
 
 conn = sqlite3.connect('address_book.db')
 c = conn.cursor()
-'''
+
 c.execute(""" CREATE TABLE addresses (
         fname text,
         lname text,
@@ -16,7 +16,6 @@ c.execute(""" CREATE TABLE addresses (
         city text,
         state text
         )""")
-'''
 
 
 def save():
